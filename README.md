@@ -11,17 +11,17 @@
 
 <!-- Status Badges with proper logos -->
 <a href="https://aashiqmahato.com"><img src="https://img.shields.io/badge/Portfolio-aashiqmahato.com-0ea5e9?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-<a href="mailto:aashikmahato9567@gmail.com"><img src="https://img.shields.io/badge/Email-aashikmahato9567-f43f5e?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:aashikkrmahatoo@gmail.com"><img src="https://img.shields.io/badge/Email-aashikkrmahatoo-f43f5e?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/aashiq-mahato-9a343b2b4/"><img src="https://img.shields.io/badge/LinkedIn-aashiq--mahato-8b5cf6?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 <br/><br/>
 
 <!-- Dynamic Counters -->
-<img src="https://komarev.com/ghpvc/?username=Aashik9567&style=for-the-badge&color=0ea5e9&label=PROFILE+VIEWS" alt="Profile Views" />
+<img src="https://komarev.com/ghpvc/?username=AashiQMahato&style=for-the-badge&color=0ea5e9&label=PROFILE+VIEWS" alt="Profile Views" />
 &nbsp;
-<a href="https://github.com/Aashik9567?tab=followers"><img src="https://img.shields.io/github/followers/Aashik9567?style=for-the-badge&color=8b5cf6&labelColor=0D1117&logo=github" alt="Followers" /></a>
+<a href="https://github.com/AashiQMahato?tab=followers"><img src="https://img.shields.io/github/followers/AashiQMahato?style=for-the-badge&color=8b5cf6&labelColor=0D1117&logo=github" alt="Followers" /></a>
 &nbsp;
-<a href="https://github.com/Aashik9567?tab=repositories"><img src="https://img.shields.io/github/stars/Aashik9567?style=for-the-badge&color=f43f5e&labelColor=0D1117&logo=github" alt="Stars" /></a>
+<a href="https://github.com/AashiQMahato?tab=repositories"><img src="https://img.shields.io/github/stars/AashiQMahato?style=for-the-badge&color=f43f5e&labelColor=0D1117&logo=github" alt="Stars" /></a>
 
 </div>
 
@@ -98,18 +98,18 @@ strengths:
 
 <div align="center">
 
-<a href="https://github.com/Aashik9567/Automated_Attendance_Management_System">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Aashik9567&repo=Automated_Attendance_Management_System&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9" />
+<a href="https://github.com/AashiQMahato/Automated_Attendance_Management_System">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=AashiQMahato&repo=Automated_Attendance_Management_System&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9" />
 </a>
 &nbsp;
-<a href="https://github.com/Aashik9567/weather-app-NextJs">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Aashik9567&repo=weather-app-NextJs&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9" />
+<a href="https://github.com/AashiQMahato/weather-app-NextJs">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=AashiQMahato&repo=weather-app-NextJs&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9" />
 </a>
 
 <br/>
 
-<a href="https://github.com/Aashik9567/Portfolio-website">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Aashik9567&repo=Portfolio-website&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9" />
+<a href="https://github.com/AashiQMahato/Portfolio-website">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=AashiQMahato&repo=Portfolio-website&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9" />
 </a>
 
 </div>
@@ -128,7 +128,7 @@ strengths:
 - 📊 Real-time dashboard analytics
 - **Tech:** `React` `Node.js` `MongoDB` `Python`
 
-<a href="https://github.com/Aashik9567/Automated_Attendance_Management_System"><img src="https://img.shields.io/badge/View_Project-0ea5e9?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/AashiQMahato/Automated_Attendance_Management_System"><img src="https://img.shields.io/badge/View_Project-0ea5e9?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 </td>
 <td width="50%">
@@ -141,7 +141,7 @@ strengths:
 - 📅 10-day forecast with charts
 - **Tech:** `Next.js` `OpenAI` `Tailwind` `REST API`
 
-<a href="https://github.com/Aashik9567/weather-app-NextJs"><img src="https://img.shields.io/badge/View_Project-8b5cf6?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/AashiQMahato/weather-app-NextJs"><img src="https://img.shields.io/badge/View_Project-8b5cf6?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 </td>
 </tr>
@@ -156,7 +156,7 @@ strengths:
 - 🎨 Custom animations with Framer Motion
 - **Tech:** `React` `CSS3` `Framer Motion`
 
-<a href="https://github.com/Aashik9567/Portfolio-website"><img src="https://img.shields.io/badge/View_Project-f43f5e?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/AashiQMahato/Portfolio-website"><img src="https://img.shields.io/badge/View_Project-f43f5e?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 </td>
 <td width="50%">
@@ -169,7 +169,7 @@ strengths:
 - 🚀 Exploring new technologies
 - **Follow me** for updates!
 
-<a href="https://github.com/Aashik9567"><img src="https://img.shields.io/badge/Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/AashiQMahato"><img src="https://img.shields.io/badge/Follow_Me-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 </td>
 </tr>
@@ -184,26 +184,26 @@ strengths:
 <div align="center">
 
 <!-- Stats & Languages Side by Side -->
-<a href="https://github.com/Aashik9567">
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Aashik9567&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9&ring_color=0ea5e9&include_all_commits=true&count_private=true" />
+<a href="https://github.com/AashiQMahato">
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=AashiQMahato&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&icon_color=8b5cf6&text_color=c9d1d9&ring_color=0ea5e9&include_all_commits=true&count_private=true" />
 </a>
 &nbsp;
-<a href="https://github.com/Aashik9567">
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aashik9567&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&text_color=c9d1d9&langs_count=8" />
+<a href="https://github.com/AashiQMahato">
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AashiQMahato&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0ea5e9&text_color=c9d1d9&langs_count=8" />
 </a>
 
 <br/><br/>
 
 <!-- Streak Stats (using demolab - reliable host) -->
-<a href="https://github.com/Aashik9567">
-<img src="https://streak-stats.demolab.com/?user=Aashik9567&theme=tokyonight&hide_border=true&background=0D1117&stroke=0ea5e9&ring=8b5cf6&fire=f43f5e&currStreakLabel=0ea5e9&sideLabels=0ea5e9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=64748b" />
+<a href="https://github.com/AashiQMahato">
+<img src="https://streak-stats.demolab.com/?user=AashiQMahato&theme=tokyonight&hide_border=true&background=0D1117&stroke=0ea5e9&ring=8b5cf6&fire=f43f5e&currStreakLabel=0ea5e9&sideLabels=0ea5e9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=64748b" />
 </a>
 
 <br/><br/>
 
 <!-- Activity Graph -->
-<a href="https://github.com/Aashik9567">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Aashik9567&bg_color=0D1117&color=0ea5e9&line=8b5cf6&point=f43f5e&area_color=0ea5e9&area=true&hide_border=true&custom_title=Contribution%20Graph" width="95%"/>
+<a href="https://github.com/AashiQMahato">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AashiQMahato&bg_color=0D1117&color=0ea5e9&line=8b5cf6&point=f43f5e&area_color=0ea5e9&area=true&hide_border=true&custom_title=Contribution%20Graph" width="95%"/>
 </a>
 
 </div>
@@ -240,16 +240,16 @@ strengths:
 ### 🐍 Watch My Contribution Snake Eat My Graph!
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aashik9567/Aashik9567/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Aashik9567/Aashik9567/output/github-snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/Aashik9567/Aashik9567/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AashiQMahato/AashiQMahato/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AashiQMahato/AashiQMahato/output/github-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/AashiQMahato/AashiQMahato/output/github-snake-dark.svg" />
 </picture>
 
 <br/><br/>
 
 ### 🏆 GitHub Trophies
 
-<img src="https://github-profile-trophy.vercel.app/?username=Aashik9567&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" width="90%" />
+<img src="https://github-profile-trophy.vercel.app/?username=AashiQMahato&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" width="90%" />
 
 <br/><br/>
 
@@ -259,19 +259,19 @@ strengths:
 
 <table>
 <tr>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+1&body=I+want+to+place+my+mark+on+position+1!"><img src="https://img.shields.io/badge/1-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+2&body=I+want+to+place+my+mark+on+position+2!"><img src="https://img.shields.io/badge/2-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+3&body=I+want+to+place+my+mark+on+position+3!"><img src="https://img.shields.io/badge/3-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+1&body=I+want+to+place+my+mark+on+position+1!"><img src="https://img.shields.io/badge/1-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+2&body=I+want+to+place+my+mark+on+position+2!"><img src="https://img.shields.io/badge/2-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+3&body=I+want+to+place+my+mark+on+position+3!"><img src="https://img.shields.io/badge/3-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
 </tr>
 <tr>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+4&body=I+want+to+place+my+mark+on+position+4!"><img src="https://img.shields.io/badge/4-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+5&body=I+want+to+place+my+mark+on+position+5!"><img src="https://img.shields.io/badge/5-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+6&body=I+want+to+place+my+mark+on+position+6!"><img src="https://img.shields.io/badge/6-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+4&body=I+want+to+place+my+mark+on+position+4!"><img src="https://img.shields.io/badge/4-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+5&body=I+want+to+place+my+mark+on+position+5!"><img src="https://img.shields.io/badge/5-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+6&body=I+want+to+place+my+mark+on+position+6!"><img src="https://img.shields.io/badge/6-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
 </tr>
 <tr>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+7&body=I+want+to+place+my+mark+on+position+7!"><img src="https://img.shields.io/badge/7-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+8&body=I+want+to+place+my+mark+on+position+8!"><img src="https://img.shields.io/badge/8-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
-<td align="center"><a href="https://github.com/Aashik9567/Aashik9567/issues/new?title=TicTacToe%3A+Move+9&body=I+want+to+place+my+mark+on+position+9!"><img src="https://img.shields.io/badge/9-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+7&body=I+want+to+place+my+mark+on+position+7!"><img src="https://img.shields.io/badge/7-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+8&body=I+want+to+place+my+mark+on+position+8!"><img src="https://img.shields.io/badge/8-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
+<td align="center"><a href="https://github.com/AashiQMahato/AashiQMahato/issues/new?title=TicTacToe%3A+Move+9&body=I+want+to+place+my+mark+on+position+9!"><img src="https://img.shields.io/badge/9-0D1117?style=for-the-badge&logoColor=white" width="60" /></a></td>
 </tr>
 </table>
 
@@ -309,7 +309,7 @@ strengths:
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 &nbsp;
-<a href="https://github.com/Aashik9567">
+<a href="https://github.com/AashiQMahato">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 &nbsp;
@@ -317,7 +317,7 @@ strengths:
 <img src="https://img.shields.io/badge/Portfolio-0ea5e9?style=for-the-badge&logo=googlechrome&logoColor=white" />
 </a>
 &nbsp;
-<a href="mailto:aashikmahato9567@gmail.com">
+<a href="mailto:aashikkrmahatoo@gmail.com">
 <img src="https://img.shields.io/badge/Email-f43f5e?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
