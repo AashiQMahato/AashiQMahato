@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240"
+     role="img" aria-label="Most used languages will appear here after the first workflow run">
+  <title>Most used languages — pending first workflow run</title>
+  <defs>
+    <linearGradient id="pEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0EA5E9" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity=".4"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .l{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:13px;fill:#C9D1D9;text-anchor:middle}
+    .s{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:11.5px;fill:#8B949E;text-anchor:middle}
+    .p{animation:p 2.6s ease-in-out infinite}
+    @keyframes p{0%,100%{opacity:.45}50%{opacity:1}}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important}
+    }
+  </style>
+  <rect width="480" height="240" rx="14" fill="#11161D"/>
+  <rect x="1" y="1" width="478" height="238" rx="13" fill="none" stroke="url(#pEdge)"
+        stroke-width="1.5" stroke-dasharray="7 6"/>
+  <text class="l p" x="240" y="116">Most used languages</text>
+  <text class="s" x="240" y="140">generating on first workflow run</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 170" width="1000" height="170"
+     role="img" aria-labelledby="fT">
+  <title id="fT">Built in Kathmandu, Nepal. Thanks for visiting.</title>
+  <defs>
+    <linearGradient id="fW1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0EA5E9"/><stop offset=".5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+    <linearGradient id="fW2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="fW3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F43F5E"/><stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <clipPath id="fClip"><rect x="0" y="62" width="1000" height="108"/></clipPath>
+  </defs>
+  <style>
+    .line{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:14.5px;font-weight:500;fill:#C9D1D9;text-anchor:middle}
+    .sub{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:12px;fill:#8B949E;text-anchor:middle;letter-spacing:.3px}
+    .w1{animation:w1 13s linear infinite}
+    .w2{animation:w2 17s linear infinite}
+    .w3{animation:w3 21s linear infinite}
+    @keyframes w1{from{transform:translateX(0)}to{transform:translateX(-500px)}}
+    @keyframes w2{from{transform:translateX(-500px)}to{transform:translateX(0)}}
+    @keyframes w3{from{transform:translateX(0)}to{transform:translateX(-500px)}}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important}
+    }
+  </style>
+  <text class="line" x="500" y="28">Open to opportunities and collaborations — let's build something good.</text>
+  <text class="sub" x="500" y="50">Kathmandu, Nepal</text>
+  <g clip-path="url(#fClip)">
+    <g transform="translate(0 0)"><g class="w1">
+      <path d="M0 96 q125 -34 250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 V200 H0 Z" fill="url(#fW1)" fill-opacity="0.26"/>
+    </g></g>
+    <g transform="translate(0 16)"><g class="w2">
+      <path d="M0 104 q125 -26 250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 V200 H0 Z" fill="url(#fW2)" fill-opacity="0.22"/>
+    </g></g>
+    <g transform="translate(0 34)"><g class="w3">
+      <path d="M0 112 q125 -30 250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 V200 H0 Z" fill="url(#fW3)" fill-opacity="0.32"/>
+    </g></g>
+  </g>
+</svg>

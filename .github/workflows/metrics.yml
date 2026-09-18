@@ -1,0 +1,139 @@
+# Renders GitHub stats, top languages and an isometric contribution calendar
+# straight into this repo, so the README never depends on a public Vercel
+# endpoint that can rate-limit (HTTP 402/503) and silently break.
+name: Profile metrics
+
+on:
+  schedule:
+    # 03:17 UTC daily. Off the hour on purpose: GitHub queues cron heavily at :00.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/metrics.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # ---------- GitHub stats ----------
+      - name: Stats (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: AashiQMahato
+          filename: assets/metrics/overview-dark.svg
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Kathmandu
+          config_theme: dark
+          config_output: svg
+          plugins_errors_fatal: no
+          extras_css: |
+            svg, .background { background: #0D1117 !important; }
+            h2, .title { color: #0EA5E9 !important; }
+            .value { color: #F0F6FC !important; }
+
+      - name: Stats (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: AashiQMahato
+          filename: assets/metrics/overview-light.svg
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Kathmandu
+          config_theme: light
+          config_output: svg
+          plugins_errors_fatal: no
+          extras_css: |
+            svg, .background { background: #FFFFFF !important; }
+            h2, .title { color: #0369A1 !important; }
+            .value { color: #1F2328 !important; }
+
+      # ---------- Top languages ----------
+      - name: Languages (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: AashiQMahato
+          filename: assets/metrics/languages-dark.svg
+          base: ""
+          config_timezone: Asia/Kathmandu
+          config_theme: dark
+          config_output: svg
+          plugins_errors_fatal: no
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          extras_css: |
+            svg, .background { background: #0D1117 !important; }
+            h2, .title { color: #8B5CF6 !important; }
+
+      - name: Languages (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: AashiQMahato
+          filename: assets/metrics/languages-light.svg
+          base: ""
+          config_timezone: Asia/Kathmandu
+          config_theme: light
+          config_output: svg
+          plugins_errors_fatal: no
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          extras_css: |
+            svg, .background { background: #FFFFFF !important; }
+            h2, .title { color: #6D28D9 !important; }
+
+      # ---------- Isometric calendar (also reports the current streak) ----------
+      - name: Calendar (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: AashiQMahato
+          filename: assets/metrics/calendar-dark.svg
+          base: ""
+          config_timezone: Asia/Kathmandu
+          config_theme: dark
+          config_output: svg
+          plugins_errors_fatal: no
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          extras_css: |
+            svg, .background { background: #0D1117 !important; }
+            h2, .title { color: #F43F5E !important; }
+
+      - name: Calendar (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: AashiQMahato
+          filename: assets/metrics/calendar-light.svg
+          base: ""
+          config_timezone: Asia/Kathmandu
+          config_theme: light
+          config_output: svg
+          plugins_errors_fatal: no
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          extras_css: |
+            svg, .background { background: #FFFFFF !important; }
+            h2, .title { color: #BE123C !important; }

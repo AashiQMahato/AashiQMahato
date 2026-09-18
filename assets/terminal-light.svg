@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460"
+     role="img" aria-labelledby="tTitle tDesc">
+  <title id="tTitle">About Aashiq Kumar Mahato</title>
+  <desc id="tDesc">A terminal window. whoami: Aashiq Kumar Mahato, Full-Stack Developer and Electronics
+  and Communication engineer. Based in Kathmandu, Nepal; a B.E. graduate open to opportunities.
+  Currently building AI-powered web apps, exploring advanced React patterns and system design, and open
+  to collaborating on innovative projects. Strengths: clean performant code, hardware and software
+  integration, user-centric design thinking, creative problem solving.</desc>
+  <defs>
+    <linearGradient id="tEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0369A1" stop-opacity=".7"/>
+      <stop offset=".5" stop-color="#6D28D9" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#BE123C" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="tGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0369A1" stop-opacity=".16"/>
+      <stop offset=".5" stop-color="#6D28D9" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#BE123C" stop-opacity=".16"/>
+    </linearGradient>
+    <clipPath id="tFrame"><rect x="1" y="1" width="998" height="458" rx="13"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:17px}
+    .sig{fill:#0369A1;font-weight:700}
+    .cmd{fill:#0B1220;font-weight:600}
+    .out{fill:#1F2328}
+    .arrow{fill:#6D28D9;font-weight:700}
+    .chrome{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:12.5px;fill:#59636E;letter-spacing:.3px}
+    .caret{fill:#BE123C;animation:blink 1.1s steps(1,end) infinite}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes ln0{from{clip-path:inset(0 82px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln0{animation:ln0 .5s steps(6,end) 0.30s both}
+@keyframes ln1{from{clip-path:inset(0 449px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln1{animation:ln1 .5s steps(42,end) 0.62s both}
+@keyframes ln2{from{clip-path:inset(0 153px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln2{animation:ln2 .5s steps(13,end) 0.94s both}
+@keyframes ln3{from{clip-path:inset(0 530px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln3{animation:ln3 .5s steps(50,end) 1.26s both}
+@keyframes ln4{from{clip-path:inset(0 510px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln4{animation:ln4 .5s steps(48,end) 1.58s both}
+@keyframes ln5{from{clip-path:inset(0 143px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln5{animation:ln5 .5s steps(12,end) 1.90s both}
+@keyframes ln6{from{clip-path:inset(0 306px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln6{animation:ln6 .5s steps(28,end) 2.22s both}
+@keyframes ln7{from{clip-path:inset(0 520px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln7{animation:ln7 .5s steps(49,end) 2.54s both}
+@keyframes ln8{from{clip-path:inset(0 469px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln8{animation:ln8 .5s steps(44,end) 2.86s both}
+@keyframes ln9{from{clip-path:inset(0 184px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln9{animation:ln9 .5s steps(16,end) 3.18s both}
+@keyframes ln10{from{clip-path:inset(0 469px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln10{animation:ln10 .5s steps(44,end) 3.50s both}
+@keyframes ln11{from{clip-path:inset(0 581px 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ln11{animation:ln11 .5s steps(55,end) 3.82s both}
+.tail{opacity:1;animation:fadeIn .4s ease-out 4.14s both}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important}
+      .tail{opacity:1}
+      .caret{opacity:1}
+    }
+  </style>
+  <rect width="1000" height="460" rx="14" fill="#F6F8FA"/>
+  <g clip-path="url(#tFrame)">
+    <rect width="1000" height="56" fill="url(#tGlow)"/>
+    <rect y="55" width="1000" height="1" fill="#0B1220" fill-opacity="0.12"/>
+  </g>
+  <rect x="1" y="1" width="998" height="458" rx="13" fill="none"
+        stroke="url(#tEdge)" stroke-width="1.5" stroke-opacity=".55"/>
+  <circle cx="30" cy="28" r="6" fill="#BE123C" fill-opacity=".85"/>
+  <circle cx="52" cy="28" r="6" fill="#6D28D9" fill-opacity=".85"/>
+  <circle cx="74" cy="28" r="6" fill="#0369A1" fill-opacity=".85"/>
+  <text class="chrome" x="104" y="32">aashiq@github &#8212; ~/about</text>
+<text class="mono ln0" x="36" y="100"><tspan class="sig">&#36;</tspan><tspan class="cmd" dx="10.2">whoami</tspan></text>
+<text class="mono out ln1" x="56" y="126">Aashiq Kumar Mahato — Full-Stack Developer</text>
+<text class="mono ln2" x="36" y="152"><tspan class="sig">&#36;</tspan><tspan class="cmd" dx="10.2">cat about.txt</tspan></text>
+<text class="mono out ln3" x="56" y="178">B.E. Electronics, Communication &amp; Information Eng.</text>
+<text class="mono out ln4" x="56" y="204">Kathmandu, Nepal · recent graduate, open to work</text>
+<text class="mono ln5" x="36" y="230"><tspan class="sig">&#36;</tspan><tspan class="cmd" dx="10.2">now --status</tspan></text>
+<text class="mono ln6" x="46" y="256"><tspan class="arrow">▸</tspan><tspan class="out" dx="10.2">Building AI-powered web apps</tspan></text>
+<text class="mono ln7" x="46" y="282"><tspan class="arrow">▸</tspan><tspan class="out" dx="10.2">Exploring advanced React patterns &amp; system design</tspan></text>
+<text class="mono ln8" x="46" y="308"><tspan class="arrow">▸</tspan><tspan class="out" dx="10.2">Open to collaborating on innovative projects</tspan></text>
+<text class="mono ln9" x="36" y="334"><tspan class="sig">&#36;</tspan><tspan class="cmd" dx="10.2">strengths --list</tspan></text>
+<text class="mono out ln10" x="56" y="360">clean, performant code · hardware + software</text>
+<text class="mono out ln11" x="56" y="386">user-centric design thinking · creative problem solving</text>
+<g class="tail"><text class="mono" x="36" y="412"><tspan class="sig">&#36;</tspan></text><rect class="caret" x="52" y="398" width="9" height="19" rx="1.5"/></g>
+</svg>
