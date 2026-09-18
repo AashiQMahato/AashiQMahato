@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320"
+     role="img" aria-labelledby="cT cD">
+  <title id="cT">AI Weather Dashboard</title>
+  <desc id="cD">Project card. AI Weather Dashboard. OpenAI-powered weather insights with GPS location, a 10-day forecast with charts and a glassmorphism UI. Built with Next.js, OpenAI, Tailwind, REST API. Links to the weather-app-NextJs repository on GitHub.</desc>
+  <defs>
+    <linearGradient id="cEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".85"/>
+      <stop offset=".55" stop-color="#8B5CF6" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#F43F5E" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="cShim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#8B5CF6" stop-opacity="1"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="cGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cTop"><rect x="14" y="0" width="452" height="2"/></clipPath>
+    <clipPath id="cFrame"><rect x="1" y="1" width="478" height="318" rx="13"/></clipPath>
+  </defs>
+  <style>
+    .sans{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif}
+    .ttl{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:21px;font-weight:700;letter-spacing:-.35px;fill:#F0F6FC}
+    .dsc{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:13.5px;font-weight:400;fill:#C9D1D9}
+    .chip{fill:#FFFFFF;fill-opacity:0.06;stroke:#FFFFFF;stroke-opacity:0.09;stroke-width:1}
+    .chipT{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:11.5px;fill:#C9D1D9;text-anchor:middle}
+    .pillR{fill:#8B5CF6;fill-opacity:.13;stroke:#8B5CF6;stroke-opacity:.4;stroke-width:1}
+    .pillT{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;fill:#8B5CF6;letter-spacing:.3px}
+    .cta{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:12.5px;font-weight:600;fill:#8B5CF6;letter-spacing:.2px}
+    .shim{animation:shim 8s cubic-bezier(.45,0,.55,1) infinite}
+    @keyframes shim{0%{transform:translateX(-160px)}100%{transform:translateX(480px)}}
+    .glow{animation:glow 11s ease-in-out infinite alternate}
+    @keyframes glow{from{opacity:.5}to{opacity:1}}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important}
+      .shim{display:none}
+      .glow{opacity:1}
+    }
+  </style>
+  <rect width="480" height="320" rx="14" fill="#0D1117"/>
+  <g clip-path="url(#cFrame)">
+    <rect width="480" height="320" rx="14" fill="#FFFFFF" fill-opacity="0.035"/>
+    <g class="glow"><ellipse cx="452" cy="30" rx="210" ry="150" fill="url(#cGlow)"/></g>
+  </g>
+  <rect x="1" y="1" width="478" height="318" rx="13" fill="none"
+        stroke="url(#cEdge)" stroke-width="1.5" stroke-opacity=".6"/>
+  <g clip-path="url(#cTop)">
+    <rect class="shim" x="0" y="0" width="160" height="2" fill="url(#cShim)"/>
+  </g>
+  <g>
+    <rect class="pillR" x="335.6" y="22" width="116.4" height="26" rx="13"/>
+    <text class="pillT" x="347.6" y="39">AI · Dashboard</text>
+  </g>
+  <text class="ttl" x="28" y="98">AI Weather Dashboard</text>
+  <text class="dsc" x="28" y="132">OpenAI-powered weather insights with GPS</text>
+  <text class="dsc" x="28" y="153">location, a 10-day forecast with charts and a</text>
+  <text class="dsc" x="28" y="174">glassmorphism UI.</text>
+  <g transform="translate(28.0 0)">
+    <rect class="chip" y="212" width="68.3" height="28" rx="9"/>
+    <text class="chipT" x="34.2" y="230">Next.js</text>
+  </g>
+  <g transform="translate(104.3 0)">
+    <rect class="chip" y="212" width="61.4" height="28" rx="9"/>
+    <text class="chipT" x="30.7" y="230">OpenAI</text>
+  </g>
+  <g transform="translate(173.7 0)">
+    <rect class="chip" y="212" width="75.2" height="28" rx="9"/>
+    <text class="chipT" x="37.6" y="230">Tailwind</text>
+  </g>
+  <g transform="translate(256.9 0)">
+    <rect class="chip" y="212" width="75.2" height="28" rx="9"/>
+    <text class="chipT" x="37.6" y="230">REST API</text>
+  </g>
+  <text class="cta" x="28" y="288">View repository →</text>
+</svg>

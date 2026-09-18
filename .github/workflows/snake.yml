@@ -1,0 +1,49 @@
+# Generates the contribution snake and commits it into assets/, so the README
+# can reference it with a plain relative path instead of an "output" branch.
+name: Contribution snake
+
+on:
+  schedule:
+    - cron: "37 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/snake.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-snake
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # "#" is literal inside a YAML block scalar, so the hex colours are safe here.
+      - name: Render snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#8B5CF6&color_dots=#161B22,#0C4A6E,#0284C7,#38BDF8,#F43F5E
+            dist/snake-light.svg?palette=github-light&color_snake=#6D28D9&color_dots=#EBEDF0,#BAE6FD,#38BDF8,#8B5CF6,#BE123C
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          cp dist/snake-dark.svg  assets/snake-dark.svg
+          cp dist/snake-light.svg assets/snake-light.svg
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/snake-dark.svg assets/snake-light.svg
+          if git diff --cached --quiet; then
+            echo "Snake unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: refresh contribution snake [skip ci]"
+          git push

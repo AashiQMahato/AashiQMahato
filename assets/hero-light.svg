@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320"
+     role="img" aria-labelledby="hTitle hDesc" preserveAspectRatio="xMidYMid meet">
+  <title id="hTitle">Aashiq Kumar Mahato</title>
+  <desc id="hDesc">Animated banner. Aashiq Kumar Mahato, Full-Stack Developer and Electronics and
+  Communication Engineer based in Kathmandu, Nepal. Currently open to opportunities.</desc>
+  <defs>
+    <linearGradient id="hEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0369A1" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#6D28D9" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#BE123C" stop-opacity=".85"/>
+    </linearGradient>
+    <linearGradient id="hRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0369A1"/>
+      <stop offset=".5" stop-color="#6D28D9"/>
+      <stop offset="1" stop-color="#BE123C" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hA1" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0369A1" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#0369A1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hA2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#6D28D9" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#6D28D9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hA3" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#BE123C" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#BE123C" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hDots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="#5B6470" fill-opacity="0.26"/>
+    </pattern>
+    <linearGradient id="hDotFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset=".62" stop-color="#fff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="hDotMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="320">
+      <rect width="1000" height="320" fill="url(#hDotFade)"/>
+    </mask>
+    <clipPath id="hFrame"><rect x="1" y="1" width="998" height="318" rx="14"/></clipPath>
+  </defs>
+  <style>
+    .sans{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif}
+    .mono{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace}
+    .name{font-size:56px;font-weight:800;letter-spacing:-1.4px;fill:#0B1220}
+    .eyebrow{font-size:14px;font-weight:500;letter-spacing:2.4px;fill:#0369A1}
+    .tag{font-size:20px;font-weight:500;fill:#1F2328}
+    .caret{fill:#BE123C}
+    .pill{font-size:13.5px;font-weight:600;letter-spacing:.4px;fill:#1F2328}
+    .rise{opacity:1;animation:rise .9s cubic-bezier(.16,1,.3,1) both}
+    .d1{animation-delay:.10s}.d2{animation-delay:.26s}.d3{animation-delay:.42s}.d4{animation-delay:.58s}
+    @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .blob{animation:drift 14s ease-in-out infinite alternate}
+    .blob2{animation:drift2 12s ease-in-out infinite alternate}
+    .blob3{animation:drift3 16s ease-in-out infinite alternate}
+    @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(70px,26px) scale(1.14)}}
+    @keyframes drift2{from{transform:translate(0,0) scale(1.06)}to{transform:translate(-64px,-22px) scale(.94)}}
+    @keyframes drift3{from{transform:translate(0,0) scale(.96)}to{transform:translate(38px,-30px) scale(1.12)}}
+    .halo{animation:halo 2.8s ease-out infinite}
+    @keyframes halo{0%{r:5;opacity:.55}70%,100%{r:13;opacity:0}}
+    .dotlive{animation:dotlive 2.8s ease-in-out infinite}
+    @keyframes dotlive{0%,100%{opacity:1}50%{opacity:.62}}
+@keyframes sh0{0%,32.6%{opacity:1}33.0%,100%{opacity:0}}
+@keyframes ty0{0%{clip-path:inset(0 516px 0 0)}12.0%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes cr0{0%,0.0%{transform:translateX(0)}12.0%,100%{transform:translateX(516px)}}
+.sh0{opacity:1;animation:sh0 15s linear infinite}
+.ty0{animation:ty0 15s steps(43,end) infinite}
+.cr0{animation:cr0 15s steps(43,end) infinite}
+@keyframes sh1{0%,33.0%{opacity:0}33.4%,65.9%{opacity:1}66.3%,100%{opacity:0}}
+@keyframes ty1{0%,33.0%{clip-path:inset(0 468px 0 0)}45.0%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes cr1{0%,33.0%{transform:translateX(0)}45.0%,100%{transform:translateX(468px)}}
+.sh1{opacity:0;animation:sh1 15s linear infinite}
+.ty1{animation:ty1 15s steps(39,end) infinite}
+.cr1{animation:cr1 15s steps(39,end) infinite}
+@keyframes sh2{0%,66.3%{opacity:0}66.7%,99.4%{opacity:1}100.0%,100%{opacity:0}}
+@keyframes ty2{0%,66.3%{clip-path:inset(0 360px 0 0)}78.3%,100%{clip-path:inset(0 0 0 0)}}
+@keyframes cr2{0%,66.3%{transform:translateX(0)}78.3%,100%{transform:translateX(360px)}}
+.sh2{opacity:0;animation:sh2 15s linear infinite}
+.ty2{animation:ty2 15s steps(30,end) infinite}
+.cr2{animation:cr2 15s steps(30,end) infinite}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important}
+      .rise{opacity:1;transform:none}
+      .sh0{opacity:1}
+      .sh1,.sh2{opacity:0}
+      .caret{display:none}
+    }
+  </style>
+  <rect width="1000" height="320" rx="15" fill="#FFFFFF"/>
+  <g clip-path="url(#hFrame)">
+    <g class="blob"><ellipse cx="180" cy="70" rx="330" ry="210" fill="url(#hA1)"/></g>
+    <g class="blob2"><ellipse cx="640" cy="40" rx="300" ry="190" fill="url(#hA2)"/></g>
+    <g class="blob3"><ellipse cx="930" cy="250" rx="280" ry="180" fill="url(#hA3)"/></g>
+    <rect width="1000" height="320" fill="url(#hDots)" mask="url(#hDotMask)"/>
+    <rect x="40" y="0" width="520" height="2" fill="url(#hRule)"/>
+  </g>
+  <rect x="1" y="1" width="998" height="318" rx="14" fill="none"
+        stroke="url(#hEdge)" stroke-width="1.5" stroke-opacity=".7"/>
+  <g class="sans">
+    <text class="mono eyebrow rise d1" x="40" y="74">AASHIQMAHATO &#183; KATHMANDU, NEPAL</text>
+    <text class="name rise d2" x="38" y="134">Aashiq Kumar Mahato</text>
+    <g class="rise d3">
+<g class="sh0"><text class="mono tag ty0" x="40" y="188">Full-Stack Developer × Electronics Engineer</text><g class="cr0"><rect class="caret" x="41" y="170" width="2" height="24" rx="1"/></g></g>
+<g class="sh1"><text class="mono tag ty1" x="40" y="188">I build AI-powered web apps, end to end</text><g class="cr1"><rect class="caret" x="41" y="170" width="2" height="24" rx="1"/></g></g>
+<g class="sh2"><text class="mono tag ty2" x="40" y="188">Bridging hardware and software</text><g class="cr2"><rect class="caret" x="41" y="170" width="2" height="24" rx="1"/></g></g>
+    </g>
+    <g class="rise d4">
+      <rect x="40" y="228" width="222" height="34" rx="17"
+            fill="#1A7F37" fill-opacity=".13" stroke="#1A7F37" stroke-opacity=".42"/>
+      <circle class="halo" cx="60" cy="245" r="5" fill="#1A7F37"/>
+      <circle class="dotlive" cx="60" cy="245" r="4.5" fill="#1A7F37"/>
+      <text class="pill" x="76" y="250">Open to opportunities</text>
+    </g>
+  </g>
+</svg>

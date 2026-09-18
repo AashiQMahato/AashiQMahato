@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 8" width="1000" height="8"
+     role="presentation" aria-hidden="true" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="dLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset=".18" stop-color="#0284C7" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#8B5CF6" stop-opacity=".65"/>
+      <stop offset=".82" stop-color="#F43F5E" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#F43F5E" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dStreak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="dClip"><rect x="0" y="3" width="1000" height="2" rx="1"/></clipPath>
+  </defs>
+  <style>
+    /* The clip path stays static; only the plain rect inside it moves. */
+    .streak{animation:travel 9s cubic-bezier(.45,0,.55,1) infinite}
+    @keyframes travel{0%{transform:translateX(-280px)}100%{transform:translateX(1000px)}}
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important}
+      .streak{display:none}
+    }
+  </style>
+  <rect x="0" y="3" width="1000" height="2" rx="1" fill="url(#dLine)"/>
+  <g clip-path="url(#dClip)">
+    <rect class="streak" x="0" y="3" width="280" height="2" fill="url(#dStreak)"/>
+  </g>
+</svg>
