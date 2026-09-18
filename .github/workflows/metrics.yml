@@ -1,6 +1,9 @@
 # Renders GitHub stats, top languages and an isometric contribution calendar
 # straight into this repo, so the README never depends on a public Vercel
 # endpoint that can rate-limit (HTTP 402/503) and silently break.
+#
+# NOTE: metrics has no `config_theme` input. Light/dark is done entirely with
+# `extras_css`, which is why each view is generated twice.
 name: Profile metrics
 
 on:
@@ -23,7 +26,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # ---------- GitHub stats ----------
       - name: Stats (dark)
         uses: lowlighter/metrics@latest
         with:
@@ -34,13 +36,23 @@ jobs:
           template: classic
           base: header, activity, community, repositories
           config_timezone: Asia/Kathmandu
-          config_theme: dark
           config_output: svg
           plugins_errors_fatal: no
           extras_css: |
-            svg, .background { background: #0D1117 !important; }
-            h2, .title { color: #0EA5E9 !important; }
-            .value { color: #F0F6FC !important; }
+            /* Calendar vars are declared on :root in the template; redeclaring
+               them on svg too keeps the override closest to the day cells. */
+            :root, svg {
+              --color-calendar-graph-day-bg: #161B22;
+              --color-calendar-graph-day-border: rgba(255,255,255,.06);
+              --color-calendar-graph-day-L1-bg: #0C4A6E;
+              --color-calendar-graph-day-L2-bg: #0284C7;
+              --color-calendar-graph-day-L3-bg: #8B5CF6;
+              --color-calendar-graph-day-L4-bg: #F43F5E;
+            }
+            /* 85 rules hard-set a colour, so inheritance alone is not enough.
+               Bars and calendar cells use background-color and survive this. */
+            svg, svg * { color: #C9D1D9 !important; }
+            h2 { color: #0EA5E9 !important; }
 
       - name: Stats (light)
         uses: lowlighter/metrics@latest
@@ -52,15 +64,24 @@ jobs:
           template: classic
           base: header, activity, community, repositories
           config_timezone: Asia/Kathmandu
-          config_theme: light
           config_output: svg
           plugins_errors_fatal: no
           extras_css: |
-            svg, .background { background: #FFFFFF !important; }
-            h2, .title { color: #0369A1 !important; }
-            .value { color: #1F2328 !important; }
+            /* Calendar vars are declared on :root in the template; redeclaring
+               them on svg too keeps the override closest to the day cells. */
+            :root, svg {
+              --color-calendar-graph-day-bg: #EBEDF0;
+              --color-calendar-graph-day-border: rgba(27,31,35,.06);
+              --color-calendar-graph-day-L1-bg: #BAE6FD;
+              --color-calendar-graph-day-L2-bg: #38BDF8;
+              --color-calendar-graph-day-L3-bg: #8B5CF6;
+              --color-calendar-graph-day-L4-bg: #BE123C;
+            }
+            /* 85 rules hard-set a colour, so inheritance alone is not enough.
+               Bars and calendar cells use background-color and survive this. */
+            svg, svg * { color: #1F2328 !important; }
+            h2 { color: #0369A1 !important; }
 
-      # ---------- Top languages ----------
       - name: Languages (dark)
         uses: lowlighter/metrics@latest
         with:
@@ -69,17 +90,28 @@ jobs:
           user: AashiQMahato
           filename: assets/metrics/languages-dark.svg
           base: ""
-          config_timezone: Asia/Kathmandu
-          config_theme: dark
-          config_output: svg
-          plugins_errors_fatal: no
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
+          config_timezone: Asia/Kathmandu
+          config_output: svg
+          plugins_errors_fatal: no
           extras_css: |
-            svg, .background { background: #0D1117 !important; }
-            h2, .title { color: #8B5CF6 !important; }
+            /* Calendar vars are declared on :root in the template; redeclaring
+               them on svg too keeps the override closest to the day cells. */
+            :root, svg {
+              --color-calendar-graph-day-bg: #161B22;
+              --color-calendar-graph-day-border: rgba(255,255,255,.06);
+              --color-calendar-graph-day-L1-bg: #0C4A6E;
+              --color-calendar-graph-day-L2-bg: #0284C7;
+              --color-calendar-graph-day-L3-bg: #8B5CF6;
+              --color-calendar-graph-day-L4-bg: #F43F5E;
+            }
+            /* 85 rules hard-set a colour, so inheritance alone is not enough.
+               Bars and calendar cells use background-color and survive this. */
+            svg, svg * { color: #C9D1D9 !important; }
+            h2 { color: #8B5CF6 !important; }
 
       - name: Languages (light)
         uses: lowlighter/metrics@latest
@@ -89,19 +121,29 @@ jobs:
           user: AashiQMahato
           filename: assets/metrics/languages-light.svg
           base: ""
-          config_timezone: Asia/Kathmandu
-          config_theme: light
-          config_output: svg
-          plugins_errors_fatal: no
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
+          config_timezone: Asia/Kathmandu
+          config_output: svg
+          plugins_errors_fatal: no
           extras_css: |
-            svg, .background { background: #FFFFFF !important; }
-            h2, .title { color: #6D28D9 !important; }
+            /* Calendar vars are declared on :root in the template; redeclaring
+               them on svg too keeps the override closest to the day cells. */
+            :root, svg {
+              --color-calendar-graph-day-bg: #EBEDF0;
+              --color-calendar-graph-day-border: rgba(27,31,35,.06);
+              --color-calendar-graph-day-L1-bg: #BAE6FD;
+              --color-calendar-graph-day-L2-bg: #38BDF8;
+              --color-calendar-graph-day-L3-bg: #8B5CF6;
+              --color-calendar-graph-day-L4-bg: #BE123C;
+            }
+            /* 85 rules hard-set a colour, so inheritance alone is not enough.
+               Bars and calendar cells use background-color and survive this. */
+            svg, svg * { color: #1F2328 !important; }
+            h2 { color: #6D28D9 !important; }
 
-      # ---------- Isometric calendar (also reports the current streak) ----------
       - name: Calendar (dark)
         uses: lowlighter/metrics@latest
         with:
@@ -110,15 +152,26 @@ jobs:
           user: AashiQMahato
           filename: assets/metrics/calendar-dark.svg
           base: ""
-          config_timezone: Asia/Kathmandu
-          config_theme: dark
-          config_output: svg
-          plugins_errors_fatal: no
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          config_timezone: Asia/Kathmandu
+          config_output: svg
+          plugins_errors_fatal: no
           extras_css: |
-            svg, .background { background: #0D1117 !important; }
-            h2, .title { color: #F43F5E !important; }
+            /* Calendar vars are declared on :root in the template; redeclaring
+               them on svg too keeps the override closest to the day cells. */
+            :root, svg {
+              --color-calendar-graph-day-bg: #161B22;
+              --color-calendar-graph-day-border: rgba(255,255,255,.06);
+              --color-calendar-graph-day-L1-bg: #0C4A6E;
+              --color-calendar-graph-day-L2-bg: #0284C7;
+              --color-calendar-graph-day-L3-bg: #8B5CF6;
+              --color-calendar-graph-day-L4-bg: #F43F5E;
+            }
+            /* 85 rules hard-set a colour, so inheritance alone is not enough.
+               Bars and calendar cells use background-color and survive this. */
+            svg, svg * { color: #C9D1D9 !important; }
+            h2 { color: #F43F5E !important; }
 
       - name: Calendar (light)
         uses: lowlighter/metrics@latest
@@ -128,12 +181,23 @@ jobs:
           user: AashiQMahato
           filename: assets/metrics/calendar-light.svg
           base: ""
-          config_timezone: Asia/Kathmandu
-          config_theme: light
-          config_output: svg
-          plugins_errors_fatal: no
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          config_timezone: Asia/Kathmandu
+          config_output: svg
+          plugins_errors_fatal: no
           extras_css: |
-            svg, .background { background: #FFFFFF !important; }
-            h2, .title { color: #BE123C !important; }
+            /* Calendar vars are declared on :root in the template; redeclaring
+               them on svg too keeps the override closest to the day cells. */
+            :root, svg {
+              --color-calendar-graph-day-bg: #EBEDF0;
+              --color-calendar-graph-day-border: rgba(27,31,35,.06);
+              --color-calendar-graph-day-L1-bg: #BAE6FD;
+              --color-calendar-graph-day-L2-bg: #38BDF8;
+              --color-calendar-graph-day-L3-bg: #8B5CF6;
+              --color-calendar-graph-day-L4-bg: #BE123C;
+            }
+            /* 85 rules hard-set a colour, so inheritance alone is not enough.
+               Bars and calendar cells use background-color and survive this. */
+            svg, svg * { color: #1F2328 !important; }
+            h2 { color: #BE123C !important; }
