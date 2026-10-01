@@ -1,40 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" width="1000" height="40"
-     role="img" aria-label="Tech stack" preserveAspectRatio="xMinYMid meet">
-  <title>Tech stack</title>
-  <defs>
-    <linearGradient id="hgT" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0284C7"/>
-      <stop offset=".55" stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#F43F5E"/>
-    </linearGradient>
-    <linearGradient id="hgBar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0284C7"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-    <linearGradient id="hgRule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#F43F5E" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="hgStreak" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F43F5E" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#F43F5E" stop-opacity=".95"/>
-      <stop offset="1" stop-color="#F43F5E" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="hgClip"><rect x="137" y="21" width="863" height="2" rx="1"/></clipPath>
-  </defs>
-  <style>
-    .t{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:21px;font-weight:700;letter-spacing:-.3px;fill:url(#hgT)}
-    .sweep{animation:sweep 11s cubic-bezier(.45,0,.55,1) infinite}
-    @keyframes sweep{0%{transform:translateX(-200px)}100%{transform:translateX(863px)}}
-    @media (prefers-reduced-motion: reduce){
-      *{animation:none!important;transition:none!important}
-      .sweep{display:none}
-    }
-  </style>
-  <rect x="0" y="11" width="3" height="20" rx="1.5" fill="url(#hgBar)"/>
-  <text class="t" x="16" y="28">Tech stack</text>
-  <rect x="137" y="21" width="863" height="2" rx="1" fill="url(#hgRule)"/>
-  <g clip-path="url(#hgClip)">
-    <rect class="sweep" x="137" y="21" width="200" height="2" fill="url(#hgStreak)"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 92" width="1000" height="92" role="img" aria-labelledby="t d">
+<title id="t">Tech stack</title>
+<desc id="d">Tools I reach for.</desc>
+<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="225.6" y2="0">
+<stop offset="0" stop-color="#2E8BFF"/><stop offset=".55" stop-color="#7D5CF0"/><stop offset="1" stop-color="#E0457B"/></linearGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E8E93" stop-opacity=".45"/><stop offset="1" stop-color="#8E8E93" stop-opacity="0"/></linearGradient></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI Variable Display','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.mono{font-family:'SF Mono',ui-monospace,SFMono-Regular,Menlo,'Cascadia Code',Consolas,'Liberation Mono',monospace}
+.rise{animation:rise .9s cubic-bezier(.22,1,.36,1) both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<g class="rise">
+<text x="2" y="46" fill="url(#g)" style="font-size:32px;font-weight:700;letter-spacing:-.8px">Tech stack</text>
+<text x="3" y="74" fill="#8E8E93" style="font-size:16px;font-weight:500;letter-spacing:-.1px">Tools I reach for.</text>
+</g>
+<rect x="2" y="90" width="996" height="1" fill="url(#rule)"/>
 </svg>

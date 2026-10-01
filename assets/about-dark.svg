@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 452" width="1000" height="452" role="img" aria-labelledby="t d">
+<title id="t">About</title>
+<desc id="d">$ whoami: Aashiq Kumar Mahato — Full-Stack Developer $ cat about.txt: B.E. Electronics, Communication &amp; Information Engineering Kathmandu, Nepal · recent graduate, open to work $ now --status: Building AI-powered web apps Exploring advanced React patterns &amp; system design Open to collaborating on innovative projects $ strengths --list: Clean, performant code · hardware + software User-centric design thinking · creative problem solving</desc>
+<defs><filter id="winSh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="6.0" stdDeviation="9.0" flood-color="#000" flood-opacity="0.55"/></filter>
+<linearGradient id="winEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.16)"/><stop offset=".18" stop-color="rgba(255,255,255,0.10)"/><stop offset="1" stop-color="rgba(255,255,255,0.10)"/></linearGradient><clipPath id="bar"><rect x="12" y="8" width="976" height="44" rx="14"/><rect x="12" y="30" width="976" height="22"/></clipPath></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI Variable Display','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.mono{font-family:'SF Mono',ui-monospace,SFMono-Regular,Menlo,'Cascadia Code',Consolas,'Liberation Mono',monospace}
+.rise{animation:rise .9s cubic-bezier(.22,1,.36,1) both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}} .mono{font-size:15px}
+.cur{animation:blink 1.1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<rect x="12.5" y="8.5" width="975" height="423" rx="14" fill="#1E1E1E" filter="url(#winSh)"/>
+<rect x="12.5" y="8.5" width="975" height="423" rx="14" fill="none" stroke="url(#winEdge)"/>
+<rect x="12.5" y="8.5" width="975" height="44" fill="#2A2A2C" clip-path="url(#bar)"/>
+<rect x="12.5" y="52" width="975" height="1" fill="rgba(255,255,255,0.10)"/>
+<circle cx="38" cy="30" r="6.5" fill="#FF5F57"/><circle cx="60" cy="30" r="6.5" fill="#FEBC2E"/><circle cx="82" cy="30" r="6.5" fill="#28C840"/>
+<text x="500" y="35" text-anchor="middle" fill="#A1A1A6" style="font-size:13px;font-weight:600">aashiq — about — zsh</text>
+<text class="mono rise" style="animation-delay:0.15s" x="44" y="92"><tspan fill="#30D158">➜</tspan><tspan fill="#64D2FF" dx="10">~</tspan><tspan fill="#F5F5F7" dx="10" font-weight="600">whoami</tspan></text>
+<text class="mono rise" style="animation-delay:0.22s" x="70" y="117" fill="#A1A1A6">Aashiq Kumar Mahato — Full-Stack Developer</text>
+<text class="mono rise" style="animation-delay:0.29s" x="44" y="142"><tspan fill="#30D158">➜</tspan><tspan fill="#64D2FF" dx="10">~</tspan><tspan fill="#F5F5F7" dx="10" font-weight="600">cat about.txt</tspan></text>
+<text class="mono rise" style="animation-delay:0.36s" x="70" y="167" fill="#A1A1A6">B.E. Electronics, Communication &amp; Information Engineering</text>
+<text class="mono rise" style="animation-delay:0.43s" x="70" y="192" fill="#A1A1A6">Kathmandu, Nepal · recent graduate, open to work</text>
+<text class="mono rise" style="animation-delay:0.50s" x="44" y="217"><tspan fill="#30D158">➜</tspan><tspan fill="#64D2FF" dx="10">~</tspan><tspan fill="#F5F5F7" dx="10" font-weight="600">now --status</tspan></text>
+<text class="mono rise" style="animation-delay:0.57s" x="70" y="242"><tspan fill="#BF5AF2">•</tspan><tspan fill="#A1A1A6" dx="10">Building AI-powered web apps</tspan></text>
+<text class="mono rise" style="animation-delay:0.64s" x="70" y="267"><tspan fill="#BF5AF2">•</tspan><tspan fill="#A1A1A6" dx="10">Exploring advanced React patterns &amp; system design</tspan></text>
+<text class="mono rise" style="animation-delay:0.71s" x="70" y="292"><tspan fill="#BF5AF2">•</tspan><tspan fill="#A1A1A6" dx="10">Open to collaborating on innovative projects</tspan></text>
+<text class="mono rise" style="animation-delay:0.78s" x="44" y="317"><tspan fill="#30D158">➜</tspan><tspan fill="#64D2FF" dx="10">~</tspan><tspan fill="#F5F5F7" dx="10" font-weight="600">strengths --list</tspan></text>
+<text class="mono rise" style="animation-delay:0.85s" x="70" y="342" fill="#A1A1A6">Clean, performant code · hardware + software</text>
+<text class="mono rise" style="animation-delay:0.92s" x="70" y="367" fill="#A1A1A6">User-centric design thinking · creative problem solving</text>
+<g class="rise" style="animation-delay:0.99s">
+<text class="mono" x="44" y="392"><tspan fill="#30D158">➜</tspan><tspan fill="#64D2FF" dx="10">~</tspan></text>
+<rect class="cur" x="76" y="378" width="9" height="18" rx="1.5" fill="#0A84FF"/>
+</g>
+</svg>

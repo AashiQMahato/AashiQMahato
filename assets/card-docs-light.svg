@@ -1,63 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320"
-     role="img" aria-labelledby="cT cD">
-  <title id="cT">Document Management App</title>
-  <desc id="cD">Project card. Document Management App. [ONE-LINE DESCRIPTION] Built with TypeScript. Links to the document-management-app-frontend repository on GitHub.</desc>
-  <defs>
-    <linearGradient id="cEdge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0369A1" stop-opacity=".85"/>
-      <stop offset=".55" stop-color="#6D28D9" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#BE123C" stop-opacity=".7"/>
-    </linearGradient>
-    <linearGradient id="cShim" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0369A1" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#0369A1" stop-opacity="1"/>
-      <stop offset="1" stop-color="#0369A1" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="cGlow" cx=".5" cy=".5" r=".5">
-      <stop offset="0" stop-color="#0369A1" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#0369A1" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="cTop"><rect x="14" y="0" width="452" height="2"/></clipPath>
-    <clipPath id="cFrame"><rect x="1" y="1" width="478" height="318" rx="13"/></clipPath>
-  </defs>
-  <style>
-    .sans{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif}
-    .ttl{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:21px;font-weight:700;letter-spacing:-.35px;fill:#0B1220}
-    .dsc{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:13.5px;font-weight:400;fill:#1F2328}
-    .chip{fill:#0B1220;fill-opacity:0.05;stroke:#0B1220;stroke-opacity:0.12;stroke-width:1}
-    .chipT{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:11.5px;fill:#1F2328;text-anchor:middle}
-    .pillR{fill:#0369A1;fill-opacity:.13;stroke:#0369A1;stroke-opacity:.4;stroke-width:1}
-    .pillT{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;fill:#0369A1;letter-spacing:.3px}
-    .cta{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:12.5px;font-weight:600;fill:#0369A1;letter-spacing:.2px}
-    .shim{animation:shim 8s cubic-bezier(.45,0,.55,1) infinite}
-    @keyframes shim{0%{transform:translateX(-160px)}100%{transform:translateX(480px)}}
-    .glow{animation:glow 11s ease-in-out infinite alternate}
-    @keyframes glow{from{opacity:.5}to{opacity:1}}
-    @media (prefers-reduced-motion: reduce){
-      *{animation:none!important;transition:none!important}
-      .shim{display:none}
-      .glow{opacity:1}
-    }
-  </style>
-  <rect width="480" height="320" rx="14" fill="#FFFFFF"/>
-  <g clip-path="url(#cFrame)">
-    <rect width="480" height="320" rx="14" fill="#0B1220" fill-opacity="0.030"/>
-    <g class="glow"><ellipse cx="452" cy="30" rx="210" ry="150" fill="url(#cGlow)"/></g>
-  </g>
-  <rect x="1" y="1" width="478" height="318" rx="13" fill="none"
-        stroke="url(#cEdge)" stroke-width="1.5" stroke-opacity=".6"/>
-  <g clip-path="url(#cTop)">
-    <rect class="shim" x="0" y="0" width="160" height="2" fill="url(#cShim)"/>
-  </g>
-  <g>
-    <rect class="pillR" x="381.8" y="22" width="70.2" height="26" rx="13"/>
-    <text class="pillT" x="393.8" y="39">Web app</text>
-  </g>
-  <text class="ttl" x="28" y="98">Document Management App</text>
-  <text class="dsc" x="28" y="132">[ONE-LINE DESCRIPTION]</text>
-  <g transform="translate(28.0 0)">
-    <rect class="chip" y="212" width="89.0" height="28" rx="9"/>
-    <text class="chipT" x="44.5" y="230">TypeScript</text>
-  </g>
-  <text class="cta" x="28" y="288">View repository →</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="t d">
+<title id="t">Document Management App</title>
+<desc id="d">Web · Dashboard. Authenticated dashboard for creating documents from typed templates, with dynamic, schema-validated forms. Built with React, TypeScript, TanStack Query, Tailwind.</desc>
+<defs><filter id="cSh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="5.1" stdDeviation="7.7" flood-color="#000" flood-opacity="0.1"/></filter>
+<linearGradient id="cEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.9)"/><stop offset=".18" stop-color="rgba(0,0,0,0.08)"/><stop offset="1" stop-color="rgba(0,0,0,0.08)"/></linearGradient><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#AF52DE"/><stop offset="1" stop-color="#5856D6"/></linearGradient>
+<linearGradient id="ish" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI Variable Display','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.mono{font-family:'SF Mono',ui-monospace,SFMono-Regular,Menlo,'Cascadia Code',Consolas,'Liberation Mono',monospace}
+.rise{animation:rise .9s cubic-bezier(.22,1,.36,1) both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<rect x="10.5" y="6.5" width="459" height="279" rx="24" fill="#F5F5F7" filter="url(#cSh)"/>
+<rect x="10.5" y="6.5" width="459" height="279" rx="24" fill="none" stroke="url(#cEdge)"/>
+<g class="rise">
+  <rect x="38" y="34" width="54" height="54" rx="13.5" fill="url(#ig)"/>
+  <rect x="38" y="34" width="54" height="54" rx="13.5" fill="url(#ish)"/>
+  <path transform="translate(50 46) scale(1.25)" d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h4" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="424" cy="52" r="16" fill="rgba(120,120,128,0.12)"/>
+  <path d="M419 57l10-10M421 47h8v8" fill="none" stroke="#0071E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g class="rise" style="animation-delay:0.10s">
+  <text x="38" y="122" fill="#AF52DE" style="font-size:12px;font-weight:600;letter-spacing:.3px">WEB · DASHBOARD</text>
+  <text x="37" y="150" fill="#1D1D1F" style="font-size:23px;font-weight:700;letter-spacing:-.5px">Document Management App</text>
+  <text x="38" y="180" fill="#6E6E73" style="font-size:14.5px;letter-spacing:-.1px">Authenticated dashboard for creating documents from</text>
+  <text x="38" y="201" fill="#6E6E73" style="font-size:14.5px;letter-spacing:-.1px">typed templates, with dynamic, schema-validated</text>
+  <text x="38" y="222" fill="#6E6E73" style="font-size:14.5px;letter-spacing:-.1px">forms.</text>
+</g>
+<g class="rise" style="animation-delay:0.20s"><rect x="38" y="236" width="54.400000000000006" height="26" rx="13" fill="rgba(120,120,128,0.12)"/><text x="65.2" y="253.5" text-anchor="middle" fill="#6E6E73" style="font-size:12px;font-weight:500">React</text><rect x="100.4" y="236" width="86.80000000000001" height="26" rx="13" fill="rgba(120,120,128,0.12)"/><text x="143.8" y="253.5" text-anchor="middle" fill="#6E6E73" style="font-size:12px;font-weight:500">TypeScript</text><rect x="195.20000000000002" y="236" width="112.72" height="26" rx="13" fill="rgba(120,120,128,0.12)"/><text x="251.56" y="253.5" text-anchor="middle" fill="#6E6E73" style="font-size:12px;font-weight:500">TanStack Query</text><rect x="315.92" y="236" width="73.84" height="26" rx="13" fill="rgba(120,120,128,0.12)"/><text x="352.84000000000003" y="253.5" text-anchor="middle" fill="#6E6E73" style="font-size:12px;font-weight:500">Tailwind</text></g>
 </svg>

@@ -1,9 +1,11 @@
-# Renders GitHub stats, top languages and an isometric contribution calendar
-# straight into this repo, so the README never depends on a public Vercel
-# endpoint that can rate-limit (HTTP 402/503) and silently break.
+# Renders the GitHub analytics cards (activity, languages, contribution calendar)
+# into assets/metrics with .github/scripts/metrics.mjs.
 #
-# NOTE: metrics has no `config_theme` input. Light/dark is done entirely with
-# `extras_css`, which is why each view is generated twice.
+# Uses the workflow's built-in token, so no secret is required. This replaced
+# lowlighter/metrics, which refuses to run without a personal access token and
+# failed every night because the METRICS_TOKEN secret was never created.
+# Optional: add a METRICS_TOKEN secret (classic PAT, read:user) to also count
+# private contributions; it is picked up automatically.
 name: Profile metrics
 
 on:
@@ -13,7 +15,10 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/metrics.yml"]
+    paths:
+      - ".github/workflows/metrics.yml"
+      - ".github/scripts/metrics.mjs"
+      - ".github/scripts/theme.mjs"
 
 permissions:
   contents: write
@@ -26,178 +31,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Stats (dark)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: AashiQMahato
-          filename: assets/metrics/overview-dark.svg
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: Asia/Kathmandu
-          config_output: svg
-          plugins_errors_fatal: no
-          extras_css: |
-            /* Calendar vars are declared on :root in the template; redeclaring
-               them on svg too keeps the override closest to the day cells. */
-            :root, svg {
-              --color-calendar-graph-day-bg: #161B22;
-              --color-calendar-graph-day-border: rgba(255,255,255,.06);
-              --color-calendar-graph-day-L1-bg: #0C4A6E;
-              --color-calendar-graph-day-L2-bg: #0284C7;
-              --color-calendar-graph-day-L3-bg: #8B5CF6;
-              --color-calendar-graph-day-L4-bg: #F43F5E;
-            }
-            /* 85 rules hard-set a colour, so inheritance alone is not enough.
-               Bars and calendar cells use background-color and survive this. */
-            svg, svg * { color: #C9D1D9 !important; }
-            h2 { color: #0EA5E9 !important; }
+      - uses: actions/checkout@v4
 
-      - name: Stats (light)
-        uses: lowlighter/metrics@latest
+      - uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: AashiQMahato
-          filename: assets/metrics/overview-light.svg
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: Asia/Kathmandu
-          config_output: svg
-          plugins_errors_fatal: no
-          extras_css: |
-            /* Calendar vars are declared on :root in the template; redeclaring
-               them on svg too keeps the override closest to the day cells. */
-            :root, svg {
-              --color-calendar-graph-day-bg: #EBEDF0;
-              --color-calendar-graph-day-border: rgba(27,31,35,.06);
-              --color-calendar-graph-day-L1-bg: #BAE6FD;
-              --color-calendar-graph-day-L2-bg: #38BDF8;
-              --color-calendar-graph-day-L3-bg: #8B5CF6;
-              --color-calendar-graph-day-L4-bg: #BE123C;
-            }
-            /* 85 rules hard-set a colour, so inheritance alone is not enough.
-               Bars and calendar cells use background-color and survive this. */
-            svg, svg * { color: #1F2328 !important; }
-            h2 { color: #0369A1 !important; }
+          node-version: 22
 
-      - name: Languages (dark)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: AashiQMahato
-          filename: assets/metrics/languages-dark.svg
-          base: ""
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          config_timezone: Asia/Kathmandu
-          config_output: svg
-          plugins_errors_fatal: no
-          extras_css: |
-            /* Calendar vars are declared on :root in the template; redeclaring
-               them on svg too keeps the override closest to the day cells. */
-            :root, svg {
-              --color-calendar-graph-day-bg: #161B22;
-              --color-calendar-graph-day-border: rgba(255,255,255,.06);
-              --color-calendar-graph-day-L1-bg: #0C4A6E;
-              --color-calendar-graph-day-L2-bg: #0284C7;
-              --color-calendar-graph-day-L3-bg: #8B5CF6;
-              --color-calendar-graph-day-L4-bg: #F43F5E;
-            }
-            /* 85 rules hard-set a colour, so inheritance alone is not enough.
-               Bars and calendar cells use background-color and survive this. */
-            svg, svg * { color: #C9D1D9 !important; }
-            h2 { color: #8B5CF6 !important; }
+      - name: Render metrics
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || github.token }}
+        run: node .github/scripts/metrics.mjs "${{ github.repository_owner }}"
 
-      - name: Languages (light)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: AashiQMahato
-          filename: assets/metrics/languages-light.svg
-          base: ""
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage
-          config_timezone: Asia/Kathmandu
-          config_output: svg
-          plugins_errors_fatal: no
-          extras_css: |
-            /* Calendar vars are declared on :root in the template; redeclaring
-               them on svg too keeps the override closest to the day cells. */
-            :root, svg {
-              --color-calendar-graph-day-bg: #EBEDF0;
-              --color-calendar-graph-day-border: rgba(27,31,35,.06);
-              --color-calendar-graph-day-L1-bg: #BAE6FD;
-              --color-calendar-graph-day-L2-bg: #38BDF8;
-              --color-calendar-graph-day-L3-bg: #8B5CF6;
-              --color-calendar-graph-day-L4-bg: #BE123C;
-            }
-            /* 85 rules hard-set a colour, so inheritance alone is not enough.
-               Bars and calendar cells use background-color and survive this. */
-            svg, svg * { color: #1F2328 !important; }
-            h2 { color: #6D28D9 !important; }
-
-      - name: Calendar (dark)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: AashiQMahato
-          filename: assets/metrics/calendar-dark.svg
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          config_timezone: Asia/Kathmandu
-          config_output: svg
-          plugins_errors_fatal: no
-          extras_css: |
-            /* Calendar vars are declared on :root in the template; redeclaring
-               them on svg too keeps the override closest to the day cells. */
-            :root, svg {
-              --color-calendar-graph-day-bg: #161B22;
-              --color-calendar-graph-day-border: rgba(255,255,255,.06);
-              --color-calendar-graph-day-L1-bg: #0C4A6E;
-              --color-calendar-graph-day-L2-bg: #0284C7;
-              --color-calendar-graph-day-L3-bg: #8B5CF6;
-              --color-calendar-graph-day-L4-bg: #F43F5E;
-            }
-            /* 85 rules hard-set a colour, so inheritance alone is not enough.
-               Bars and calendar cells use background-color and survive this. */
-            svg, svg * { color: #C9D1D9 !important; }
-            h2 { color: #F43F5E !important; }
-
-      - name: Calendar (light)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          user: AashiQMahato
-          filename: assets/metrics/calendar-light.svg
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          config_timezone: Asia/Kathmandu
-          config_output: svg
-          plugins_errors_fatal: no
-          extras_css: |
-            /* Calendar vars are declared on :root in the template; redeclaring
-               them on svg too keeps the override closest to the day cells. */
-            :root, svg {
-              --color-calendar-graph-day-bg: #EBEDF0;
-              --color-calendar-graph-day-border: rgba(27,31,35,.06);
-              --color-calendar-graph-day-L1-bg: #BAE6FD;
-              --color-calendar-graph-day-L2-bg: #38BDF8;
-              --color-calendar-graph-day-L3-bg: #8B5CF6;
-              --color-calendar-graph-day-L4-bg: #BE123C;
-            }
-            /* 85 rules hard-set a colour, so inheritance alone is not enough.
-               Bars and calendar cells use background-color and survive this. */
-            svg, svg * { color: #1F2328 !important; }
-            h2 { color: #BE123C !important; }
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/metrics
+          if git diff --cached --quiet; then
+            echo "Metrics unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile metrics [skip ci]"
+          # The snake workflow commits to main too; rebase so the push can't race it.
+          git pull --rebase origin main
+          git push
