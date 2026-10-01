@@ -22,6 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history, so the rebase-and-retry push below can find the merge base.
+          fetch-depth: 0
 
       # "#" is literal inside a YAML block scalar, so the hex colours are safe here.
       - name: Render snake
@@ -46,10 +49,11 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh contribution snake [skip ci]"
-          # Both workflows commit to main and can run at the same time, so rebase
-          # onto whatever landed meanwhile and retry instead of failing the run.
+          # Both workflows commit to the same branch and can run at the same time,
+          # so rebase onto whatever landed meanwhile and retry instead of failing.
           for attempt in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
             echo "Push attempt $attempt failed; retrying."
             sleep $((attempt * 3))
           done
