@@ -53,6 +53,11 @@ jobs:
             exit 0
           fi
           git commit -m "chore: refresh profile metrics [skip ci]"
-          # The snake workflow commits to main too; rebase so the push can't race it.
-          git pull --rebase origin main
-          git push
+          # Both workflows commit to main and can run at the same time, so rebase
+          # onto whatever landed meanwhile and retry instead of failing the run.
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "Push attempt $attempt failed; retrying."
+            sleep $((attempt * 3))
+          done
+          exit 1
