@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 44" width="152" height="44" role="img" aria-labelledby="t d">
+<title id="t">Portfolio</title>
+<desc id="d">Portfolio link</desc>
+<defs></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI Variable Display','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.mono{font-family:'SF Mono',ui-monospace,SFMono-Regular,Menlo,'Cascadia Code',Consolas,'Liberation Mono',monospace}
+
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<rect width="152" height="44" rx="22" fill="#0A84FF"/>
+<g transform="translate(24 13) scale(.75)" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></g>
+<text x="50" y="27.5" fill="#FFFFFF" style="font-size:15px;font-weight:600;letter-spacing:-.2px">Portfolio</text>
+</svg>

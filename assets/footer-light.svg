@@ -1,43 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 170" width="1000" height="170"
-     role="img" aria-labelledby="fT">
-  <title id="fT">Built in Kathmandu, Nepal. Thanks for visiting.</title>
-  <defs>
-    <linearGradient id="fW1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0369A1"/><stop offset=".5" stop-color="#6D28D9"/>
-      <stop offset="1" stop-color="#BE123C"/>
-    </linearGradient>
-    <linearGradient id="fW2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6D28D9"/><stop offset="1" stop-color="#0369A1"/>
-    </linearGradient>
-    <linearGradient id="fW3" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#BE123C"/><stop offset="1" stop-color="#6D28D9"/>
-    </linearGradient>
-    <clipPath id="fClip"><rect x="0" y="62" width="1000" height="108"/></clipPath>
-  </defs>
-  <style>
-    .line{font-family:Inter,'Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:14.5px;font-weight:500;fill:#1F2328;text-anchor:middle}
-    .sub{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:12px;fill:#59636E;text-anchor:middle;letter-spacing:.3px}
-    .w1{animation:w1 13s linear infinite}
-    .w2{animation:w2 17s linear infinite}
-    .w3{animation:w3 21s linear infinite}
-    @keyframes w1{from{transform:translateX(0)}to{transform:translateX(-500px)}}
-    @keyframes w2{from{transform:translateX(-500px)}to{transform:translateX(0)}}
-    @keyframes w3{from{transform:translateX(0)}to{transform:translateX(-500px)}}
-    @media (prefers-reduced-motion: reduce){
-      *{animation:none!important;transition:none!important}
-    }
-  </style>
-  <text class="line" x="500" y="28">Open to opportunities and collaborations — let's build something good.</text>
-  <text class="sub" x="500" y="50">Kathmandu, Nepal</text>
-  <g clip-path="url(#fClip)">
-    <g transform="translate(0 0)"><g class="w1">
-      <path d="M0 96 q125 -34 250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 V200 H0 Z" fill="url(#fW1)" fill-opacity="0.17"/>
-    </g></g>
-    <g transform="translate(0 16)"><g class="w2">
-      <path d="M0 104 q125 -26 250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 V200 H0 Z" fill="url(#fW2)" fill-opacity="0.14"/>
-    </g></g>
-    <g transform="translate(0 34)"><g class="w3">
-      <path d="M0 112 q125 -30 250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 t250 0 V200 H0 Z" fill="url(#fW3)" fill-opacity="0.22"/>
-    </g></g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 190" width="1000" height="190" role="img" aria-labelledby="t d">
+<title id="t">Let's build something good.</title>
+<desc id="d">Open to opportunities and collaborations. Designed and built in Kathmandu, Nepal.</desc>
+<defs><filter id="glow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="40"/></filter>
+<linearGradient id="ai" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF9500"/><stop offset=".33" stop-color="#FF2D55"/><stop offset=".66" stop-color="#AF52DE"/><stop offset="1" stop-color="#0071E3"/></linearGradient></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI Variable Display','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.mono{font-family:'SF Mono',ui-monospace,SFMono-Regular,Menlo,'Cascadia Code',Consolas,'Liberation Mono',monospace}
+.rise{animation:rise .9s cubic-bezier(.22,1,.36,1) both}@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<ellipse cx="500" cy="190" rx="300" ry="34" fill="url(#ai)" opacity="0.28" filter="url(#glow)"/>
+<g class="rise">
+<text x="500" y="76" text-anchor="middle" fill="#1D1D1F" style="font-size:34px;font-weight:700;letter-spacing:-1px">Let's build something good.</text>
+<text x="500" y="112" text-anchor="middle" fill="#6E6E73" style="font-size:16px;font-weight:500">Open to opportunities and collaborations.</text>
+<text x="500" y="160" text-anchor="middle" fill="#86868B" style="font-size:12px;font-weight:500;letter-spacing:.2px">Designed and built in Kathmandu, Nepal.</text>
+</g>
 </svg>

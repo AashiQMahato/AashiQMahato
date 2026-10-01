@@ -1,24 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300"
-     role="img" aria-label="GitHub stats will appear here after the first workflow run">
-  <title>GitHub stats — pending first workflow run</title>
-  <defs>
-    <linearGradient id="pEdge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0369A1" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#6D28D9" stop-opacity=".4"/>
-    </linearGradient>
-  </defs>
-  <style>
-    .l{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:13px;fill:#1F2328;text-anchor:middle}
-    .s{font-family:'Fira Code','SFMono-Regular',SFMono,Consolas,'Liberation Mono',Menlo,monospace;font-size:11.5px;fill:#59636E;text-anchor:middle}
-    .p{animation:p 2.6s ease-in-out infinite}
-    @keyframes p{0%,100%{opacity:.45}50%{opacity:1}}
-    @media (prefers-reduced-motion: reduce){
-      *{animation:none!important;transition:none!important}
-    }
-  </style>
-  <rect width="480" height="300" rx="14" fill="#F6F8FA"/>
-  <rect x="1" y="1" width="478" height="298" rx="13" fill="none" stroke="url(#pEdge)"
-        stroke-width="1.5" stroke-dasharray="7 6"/>
-  <text class="l p" x="240" y="146">GitHub stats</text>
-  <text class="s" x="240" y="170">generating on first workflow run</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="t d">
+<title id="t">GitHub activity</title>
+<desc id="d">139 contributions in the last year: Commits 106, Pull requests 28, Issues 1, Stars earned 63, Repositories 31, Followers 17.</desc>
+<defs><filter id="oSh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="5.1" stdDeviation="7.7" flood-color="#000" flood-opacity="0.1"/></filter>
+<linearGradient id="oEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.9)"/><stop offset=".18" stop-color="rgba(0,0,0,0.08)"/><stop offset="1" stop-color="rgba(0,0,0,0.08)"/></linearGradient><linearGradient id="num" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0071E3"/><stop offset="1" stop-color="#AF52DE"/></linearGradient></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI Variable Display','Segoe UI',Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.mono{font-family:'SF Mono',ui-monospace,SFMono-Regular,Menlo,'Cascadia Code',Consolas,'Liberation Mono',monospace}
+.rise{animation:rise .8s cubic-bezier(.22,1,.36,1) both}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<rect x="10.5" y="6.5" width="459" height="279" rx="24" fill="#F5F5F7" filter="url(#oSh)"/>
+<rect x="10.5" y="6.5" width="459" height="279" rx="24" fill="none" stroke="url(#oEdge)"/>
+<text x="36" y="52" fill="#1D1D1F" style="font-size:19px;font-weight:700;letter-spacing:-.3px">Activity</text>
+<text x="444" y="52" text-anchor="end" fill="#86868B" style="font-size:12.5px;font-weight:500">Last 12 months</text>
+<g class="rise">
+<text x="34" y="122" fill="url(#num)" style="font-size:54px;font-weight:700;letter-spacing:-2px">139</text>
+<text x="36" y="146" fill="#6E6E73" style="font-size:13px;font-weight:500">contributions · 3-day current streak</text>
+</g>
+<rect x="36" y="160" width="408" height="1" fill="rgba(0,0,0,0.08)"/>
+<g class="rise" style="animation-delay:0.15s">
+<circle cx="40" cy="179" r="4" fill="#0071E3"/>
+<text x="51" y="184" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">106</text>
+<text x="36" y="204" fill="#6E6E73" style="font-size:12px;font-weight:500">Commits</text></g>
+<g class="rise" style="animation-delay:0.20s">
+<circle cx="180" cy="179" r="4" fill="#AF52DE"/>
+<text x="191" y="184" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">28</text>
+<text x="176" y="204" fill="#6E6E73" style="font-size:12px;font-weight:500">Pull requests</text></g>
+<g class="rise" style="animation-delay:0.25s">
+<circle cx="320" cy="179" r="4" fill="#FF9500"/>
+<text x="331" y="184" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">1</text>
+<text x="316" y="204" fill="#6E6E73" style="font-size:12px;font-weight:500">Issues</text></g>
+<g class="rise" style="animation-delay:0.30s">
+<circle cx="40" cy="235" r="4" fill="#FF2D55"/>
+<text x="51" y="240" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">63</text>
+<text x="36" y="260" fill="#6E6E73" style="font-size:12px;font-weight:500">Stars earned</text></g>
+<g class="rise" style="animation-delay:0.35s">
+<circle cx="180" cy="235" r="4" fill="#0095D9"/>
+<text x="191" y="240" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">31</text>
+<text x="176" y="260" fill="#6E6E73" style="font-size:12px;font-weight:500">Repositories</text></g>
+<g class="rise" style="animation-delay:0.40s">
+<circle cx="320" cy="235" r="4" fill="#28A745"/>
+<text x="331" y="240" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">17</text>
+<text x="316" y="260" fill="#6E6E73" style="font-size:12px;font-weight:500">Followers</text></g>
 </svg>
