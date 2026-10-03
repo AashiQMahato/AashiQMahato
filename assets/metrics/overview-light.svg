@@ -15,7 +15,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text'
 <text x="444" y="52" text-anchor="end" fill="#86868B" style="font-size:12.5px;font-weight:500">Last 12 months</text>
 <g class="rise">
 <text x="34" y="122" fill="url(#num)" style="font-size:54px;font-weight:700;letter-spacing:-2px">147</text>
-<text x="36" y="146" fill="#6E6E73" style="font-size:13px;font-weight:500">contributions · 3-day current streak</text>
+<text x="36" y="146" fill="#6E6E73" style="font-size:13px;font-weight:500">contributions · 0-day current streak</text>
 </g>
 <rect x="36" y="160" width="408" height="1" fill="rgba(0,0,0,0.08)"/>
 <g class="rise" style="animation-delay:0.15s">
