@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="t d">
 <title id="t">Most used languages</title>
-<desc id="d">JavaScript 37.6%, TypeScript 36.9%, Jupyter Notebook 20.5%, CSS 2.1%, Python 1.7%, HTML 0.5%, C++ 0.3%, Other 0.5%</desc>
+<desc id="d">JavaScript 37.5%, TypeScript 37.0%, Jupyter Notebook 20.5%, CSS 2.1%, Python 1.7%, HTML 0.5%, C++ 0.3%, Other 0.5%</desc>
 <defs><filter id="lSh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="5.1" stdDeviation="7.7" flood-color="#000" flood-opacity="0.1"/></filter>
 <linearGradient id="lEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.9)"/><stop offset=".18" stop-color="rgba(0,0,0,0.08)"/><stop offset="1" stop-color="rgba(0,0,0,0.08)"/></linearGradient><clipPath id="bar"><rect x="36" y="82" width="408" height="14" rx="7"/></clipPath></defs>
 <style>
@@ -15,15 +15,15 @@ text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text'
 <text x="36" y="52" fill="#1D1D1F" style="font-size:19px;font-weight:700;letter-spacing:-.3px">Languages</text>
 <text x="444" y="52" text-anchor="end" fill="#86868B" style="font-size:12.5px;font-weight:500">By code size, public repos</text>
 <rect x="36" y="82" width="408" height="14" rx="7" fill="rgba(120,120,128,0.12)"/>
-<g clip-path="url(#bar)"><g class="grow"><rect x="36.0" y="82" width="151.5" height="14" fill="#f1e05a"/><rect x="189.5" y="82" width="148.6" height="14" fill="#3178c6"/><rect x="340.1" y="82" width="81.7" height="14" fill="#DA5B0B"/><rect x="423.7" y="82" width="6.4" height="14" fill="#663399"/><rect x="432.1" y="82" width="4.8" height="14" fill="#3572A5"/><rect x="438.9" y="82" width="0.0" height="14" fill="#e34c26"/><rect x="440.8" y="82" width="0.0" height="14" fill="#f34b7d"/><rect x="442.0" y="82" width="0.0" height="14" fill="#8E8E93"/></g></g>
+<g clip-path="url(#bar)"><g class="grow"><rect x="36.0" y="82" width="151.2" height="14" fill="#f1e05a"/><rect x="189.2" y="82" width="148.9" height="14" fill="#3178c6"/><rect x="340.1" y="82" width="81.5" height="14" fill="#DA5B0B"/><rect x="423.6" y="82" width="6.4" height="14" fill="#663399"/><rect x="432.0" y="82" width="4.8" height="14" fill="#3572A5"/><rect x="438.8" y="82" width="0.0" height="14" fill="#e34c26"/><rect x="440.7" y="82" width="0.0" height="14" fill="#f34b7d"/><rect x="441.9" y="82" width="0.1" height="14" fill="#8E8E93"/></g></g>
 <g class="rise" style="animation-delay:0.30s">
 <circle cx="41" cy="131.5" r="5" fill="#f1e05a"/>
 <text x="54" y="136" fill="#1D1D1F" style="font-size:14px;font-weight:600;letter-spacing:-.1px">JavaScript</text>
-<text x="222" y="136" text-anchor="end" fill="#6E6E73" style="font-size:13px;font-weight:500;font-variant-numeric:tabular-nums">37.6%</text></g>
+<text x="222" y="136" text-anchor="end" fill="#6E6E73" style="font-size:13px;font-weight:500;font-variant-numeric:tabular-nums">37.5%</text></g>
 <g class="rise" style="animation-delay:0.34s">
 <circle cx="257" cy="131.5" r="5" fill="#3178c6"/>
 <text x="270" y="136" fill="#1D1D1F" style="font-size:14px;font-weight:600;letter-spacing:-.1px">TypeScript</text>
-<text x="438" y="136" text-anchor="end" fill="#6E6E73" style="font-size:13px;font-weight:500;font-variant-numeric:tabular-nums">36.9%</text></g>
+<text x="438" y="136" text-anchor="end" fill="#6E6E73" style="font-size:13px;font-weight:500;font-variant-numeric:tabular-nums">37.0%</text></g>
 <g class="rise" style="animation-delay:0.38s">
 <circle cx="41" cy="165.5" r="5" fill="#DA5B0B"/>
 <text x="54" y="170" fill="#1D1D1F" style="font-size:14px;font-weight:600;letter-spacing:-.1px">Jupyter Notebook</text>
