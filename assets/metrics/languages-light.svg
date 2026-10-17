@@ -15,7 +15,7 @@ text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text'
 <text x="36" y="52" fill="#1D1D1F" style="font-size:19px;font-weight:700;letter-spacing:-.3px">Languages</text>
 <text x="444" y="52" text-anchor="end" fill="#86868B" style="font-size:12.5px;font-weight:500">By code size, public repos</text>
 <rect x="36" y="82" width="408" height="14" rx="7" fill="rgba(120,120,128,0.12)"/>
-<g clip-path="url(#bar)"><g class="grow"><rect x="36.0" y="82" width="147.0" height="14" fill="#3178c6"/><rect x="185.0" y="82" width="138.5" height="14" fill="#f1e05a"/><rect x="325.4" y="82" width="71.3" height="14" fill="#DA5B0B"/><rect x="398.7" y="82" width="30.3" height="14" fill="#3572A5"/><rect x="431.0" y="82" width="5.5" height="14" fill="#663399"/><rect x="438.5" y="82" width="0.2" height="14" fill="#e34c26"/><rect x="440.7" y="82" width="0.0" height="14" fill="#f34b7d"/><rect x="441.8" y="82" width="0.2" height="14" fill="#8E8E93"/></g></g>
+<g clip-path="url(#bar)"><g class="grow"><rect x="36.0" y="82" width="147.0" height="14" fill="#3178c6"/><rect x="185.0" y="82" width="138.4" height="14" fill="#f1e05a"/><rect x="325.4" y="82" width="71.2" height="14" fill="#DA5B0B"/><rect x="398.7" y="82" width="30.3" height="14" fill="#3572A5"/><rect x="431.0" y="82" width="5.5" height="14" fill="#663399"/><rect x="438.5" y="82" width="0.2" height="14" fill="#e34c26"/><rect x="440.7" y="82" width="0.0" height="14" fill="#f34b7d"/><rect x="441.8" y="82" width="0.2" height="14" fill="#8E8E93"/></g></g>
 <g class="rise" style="animation-delay:0.30s">
 <circle cx="41" cy="131.5" r="5" fill="#3178c6"/>
 <text x="54" y="136" fill="#1D1D1F" style="font-size:14px;font-weight:600;letter-spacing:-.1px">TypeScript</text>
