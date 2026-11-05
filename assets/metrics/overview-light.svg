@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" role="img" aria-labelledby="t d">
 <title id="t">GitHub activity</title>
-<desc id="d">312 contributions in the last year: Commits 232, Pull requests 75, Issues 1, Stars earned 36, Repositories 31, Followers 18.</desc>
+<desc id="d">312 contributions in the last year: Commits 232, Pull requests 75, Issues 1, Stars earned 36, Repositories 31, Followers 19.</desc>
 <defs><filter id="oSh" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="5.1" stdDeviation="7.7" flood-color="#000" flood-opacity="0.1"/></filter>
 <linearGradient id="oEdge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(255,255,255,0.9)"/><stop offset=".18" stop-color="rgba(0,0,0,0.08)"/><stop offset="1" stop-color="rgba(0,0,0,0.08)"/></linearGradient><linearGradient id="num" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0071E3"/><stop offset="1" stop-color="#AF52DE"/></linearGradient></defs>
 <style>
@@ -40,6 +40,6 @@ text{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text'
 <text x="176" y="260" fill="#6E6E73" style="font-size:12px;font-weight:500">Repositories</text></g>
 <g class="rise" style="animation-delay:0.40s">
 <circle cx="320" cy="235" r="4" fill="#28A745"/>
-<text x="331" y="240" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">18</text>
+<text x="331" y="240" fill="#1D1D1F" style="font-size:20px;font-weight:700;letter-spacing:-.4px">19</text>
 <text x="316" y="260" fill="#6E6E73" style="font-size:12px;font-weight:500">Followers</text></g>
 </svg>
